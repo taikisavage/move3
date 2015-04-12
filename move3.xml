@@ -116,12 +116,4 @@
       </block>
     </next>
   </block>
-  <block type="led_select" id="452" inline="true" x="-716" y="327">
-    <field name="ACTION">ON</field>
-    <value name="LED">
-      <block type="math_number" id="453">
-        <field name="NUM">5</field>
-      </block>
-    </value>
-  </block>
 </xml>
