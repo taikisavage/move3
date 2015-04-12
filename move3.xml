@@ -1,43 +1,63 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_stutter" id="117" x="-455" y="103">
     <next>
-      <block type="oled_cleardisplay" id="355">
+      <block type="led_select" id="416" inline="true">
+        <field name="ACTION">OFF</field>
+        <value name="LED">
+          <block type="math_number" id="423">
+            <field name="NUM">1</field>
+          </block>
+        </value>
         <next>
-          <block type="robot_delay" id="35" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="36">
-                <field name="NUM">5000</field>
+          <block type="led_select" id="424" inline="true">
+            <field name="ACTION">OFF</field>
+            <value name="LED">
+              <block type="math_number" id="425">
+                <field name="NUM">2</field>
               </block>
             </value>
             <next>
-              <block type="movement_forward" id="10">
+              <block type="oled_cleardisplay" id="355">
                 <next>
-                  <block type="robot_delay" id="21" inline="true">
+                  <block type="robot_delay" id="35" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="28">
+                      <block type="math_number" id="36">
                         <field name="NUM">5000</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_reverse" id="46">
+                      <block type="movement_forward" id="10">
                         <next>
-                          <block type="robot_delay" id="29" inline="true">
+                          <block type="robot_delay" id="21" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="30">
+                              <block type="math_number" id="28">
                                 <field name="NUM">5000</field>
                               </block>
                             </value>
                             <next>
-                              <block type="movement_left" id="56">
+                              <block type="movement_reverse" id="46">
                                 <next>
-                                  <block type="robot_delay" id="31" inline="true">
+                                  <block type="robot_delay" id="29" inline="true">
                                     <value name="DELAY">
-                                      <block type="math_number" id="32">
+                                      <block type="math_number" id="30">
                                         <field name="NUM">5000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="86"></block>
+                                      <block type="movement_left" id="56">
+                                        <next>
+                                          <block type="robot_delay" id="31" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="32">
+                                                <field name="NUM">5000</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_stop" id="86"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
