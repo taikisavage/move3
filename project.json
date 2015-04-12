@@ -1,0 +1,10 @@
+{
+    "name": "move3",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "move3.xml",
+    "author": "taikisavage",
+    "minimum_firmware_version": 42
+}
